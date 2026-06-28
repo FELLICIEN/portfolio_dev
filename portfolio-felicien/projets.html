@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — Félicien | Portfolio</title>
+<meta name="description" content="Projets réalisés par Félicien : SmartBus UDM, Radio Terre Nouvelle, SantéMoundou — applications mobiles Flutter/Firebase et sites web HTML/CSS/JS/Bootstrap.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg site-nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      félicien<span class="dot-period">.</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-nav-cta" href="contact.html">Me contacter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <!-- ===== HEADER DE PAGE ===== -->
+  <header class="page-header">
+    <div class="container">
+      <p class="breadcrumb-mono mb-3"><a href="index.html">Accueil</a> / Projets</p>
+      <h1>Mes projets</h1>
+      <p>Des applications mobiles et des sites web conçus pour répondre à des besoins concrets, à Moundou et au-delà.</p>
+    </div>
+  </header>
+
+  <!-- ===== FILTRES + GRILLE PROJETS ===== -->
+  <section>
+    <div class="container">
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Projet 1 : SmartBus UDM -->
+        <div class="col-lg-4 project-col reveal">
+          <div class="card-project h-100" data-category="mobile">
+            <div class="project-thumb thumb-1">
+              <i class="bi bi-bus-front"></i>
+              <span class="status-pill"><span class="dot"></span>Actif</span>
+            </div>
+            <div class="body">
+              <h3>SmartBus </h3>
+              <p>Application mobile de suivi en temps réel des bus de l'Université de Moundou via GPS. Inclut un tableau de bord KPI pour visualiser l'activité du réseau de transport, une page chauffeur dédiée et un système de notifications.</p>
+              <div class="tag-row">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Firebase Firestore</span>
+                <span class="tag">Google Maps</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO : remplace par le vrai lien du dépôt / de la démo -->
+                <a href="https://github.com/FELLICIEN/smartBus-udm.git"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 : Radio Terre Nouvelle -->
+        <div class="col-lg-4 project-col reveal">
+          <div class="card-project h-100" data-category="web">
+            <div class="project-thumb thumb-2">
+              <i class="bi bi-broadcast"></i>
+              <span class="status-pill"><span class="dot"></span>En ligne</span>
+            </div>
+            <div class="body">
+                <h3>Electrotech</h3>
+                <p>Site web pour la vente en ligne de produits technologiques.</p>
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/FELLICIEN/electrotech.git"><i class="bi bi-github"></i> Code</a>
+                <a href="https://fellicien.github.io/electrotech/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 3 : SantéMoundou -->
+        <div class="col-lg-4 project-col reveal">
+          <div class="card-project h-100" data-category="web">
+            <div class="project-thumb thumb-3">
+              <i class="bi bi-heart-pulse"></i>
+              <span class="status-pill"><span class="dot"></span>en ligne</span>
+            </div>
+            <div class="body">
+              <h3>Calculatrice agricole</h3>
+              <p>Application web pour le calcul des rendements agricoles.</p>
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/FELLICIEN/calculateur.git"><i class="bi bi-github"></i> Code</a>
+                <a href="https://fellicien.github.io/calculateur/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Projet 3 : SantéMoundou -->
+        <div class="col-lg-4 project-col reveal">
+          <div class="card-project h-100" data-category="web">
+            <div class="project-thumb thumb-3">
+              <i class="bi bi-heart-pulse"></i>
+              <span class="status-pill"><span class="dot"></span>en ligne</span>
+            </div>
+            <div class="body">
+              <h3>Logone informatique </h3>
+              <p>Site web pour la vente en ligne de produits informatiques.</p>
+              <div class="tag-row">
+                <span class="tag">Template</span>
+                
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/FELLICIEN/template.git"><i class="bi bi-github"></i> Code</a>
+                <a href="https://fellicien.github.io/template/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bloc pour ajouter facilement un futur projet -->
+      <!--
+      <div class="col-lg-4 project-col reveal">
+        <div class="card-project h-100" data-category="web">
+          ... copier la structure d'une carte ci-dessus ...
+        </div>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="pt-0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Un projet similaire à réaliser ?</h2>
+        <p>Je serais ravi d'en discuter et de voir comment je peux y contribuer.</p>
+        <a href="contact.html" class="btn btn-primary-amber">Me contacter <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="brand">
+          <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          félicien<span class="dot-period">.</span>
+        </div>
+        <p>Développeur mobile &amp; web — license en informatique et télécommunications. Je conçois des solutions numériques utiles, pensées pour des problèmes réels.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:danrafelicien@gmail.com">danrafelicien@gmail.com</a></li>
+          <li><a href="tel:+23560077150">+235 60 07 71 50</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Réseaux</h5>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="current-year"></span> Félicien — Tous droits réservés</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

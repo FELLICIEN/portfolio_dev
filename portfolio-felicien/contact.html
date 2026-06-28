@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Félicien | Portfolio</title>
+<meta name="description" content="Contactez Félicien, développeur mobile & web basé à Moundou, Tchad, pour un stage, une alternance ou une mission freelance.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg site-nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      félicien<span class="dot-period">.</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-nav-cta" href="contact.html">Me contacter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <!-- ===== HEADER DE PAGE ===== -->
+  <header class="page-header">
+    <div class="container">
+      <p class="breadcrumb-mono mb-3"><a href="index.html">Accueil</a> / Contact</p>
+      <h1>Contactez-moi</h1>
+      <p>Une question, une offre de stage, ou un projet à construire ensemble ? Écrivez-moi.</p>
+    </div>
+  </header>
+
+  <!-- ===== FORMULAIRE + INFOS ===== -->
+  <section>
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-7 reveal">
+          <div class="alert-success-custom mb-4" id="formSuccess" role="alert">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Merci ! Votre message a bien été envoyé. Je vous répondrai rapidement.</span>
+          </div>
+          <div class="alert-success-custom mb-4" id="formError" role="alert" style="background:rgba(224,99,63,.12); border-color:#e0633f; color:#a8432a;">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <span>Une erreur est survenue lors de l'envoi. Merci de réessayer, ou de m'écrire directement par e-mail.</span>
+          </div>
+
+          <form id="contactForm" action="https://formspree.io/f/xkolbryo" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="was-validated-field">
+                  <label class="form-label-custom" for="name">NOM COMPLET</label>
+                  <input type="text" class="form-control form-control-custom" id="name" name="name" data-required placeholder="Votre nom">
+                  <div class="form-feedback">Merci d'indiquer votre nom.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="was-validated-field">
+                  <label class="form-label-custom" for="email">E-MAIL</label>
+                  <input type="email" class="form-control form-control-custom" id="email" name="_replyto" data-required placeholder="danrafelicien@gmail.com">
+                  <div class="form-feedback">Merci d'indiquer une adresse e-mail valide.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="was-validated-field">
+                  <label class="form-label-custom" for="subject">SUJET</label>
+                  <input type="text" class="form-control form-control-custom" id="subject" name="subject" data-required placeholder="Proposition de stage, projet web...">
+                  <div class="form-feedback">Merci d'indiquer un sujet.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="was-validated-field">
+                  <label class="form-label-custom" for="message">MESSAGE</label>
+                  <textarea class="form-control form-control-custom" id="message" name="message" rows="5" data-required placeholder="Décrivez votre besoin..."></textarea>
+                  <div class="form-feedback">Merci d'écrire un message.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-amber">Envoyer le message <i class="bi bi-send ms-1"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-5 reveal">
+          <div class="contact-card">
+            <h3 class="h5 mb-4 text-white">Mes coordonnées</h3>
+
+            <div class="row-item">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <small>E-MAIL</small>
+                <!-- TODO : remplace par ton vrai e-mail -->
+                <a href="mailto:danrafelicien@gmail.com" class="text-white">danrafelicien@gmail.com</a>
+              </div>
+            </div>
+            <div class="row-item">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <small>TÉLÉPHONE / WHATSAPP</small>
+                <!-- TODO : remplace par ton vrai numéro -->
+                <a href="tel:+23560077150" class="text-white">+235 60 07 71 50</a>
+              </div>
+            </div>
+            <div class="row-item">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <small>LOCALISATION</small>
+                <span class="text-white">Moundou, Tchad</span>
+              </div>
+            </div>
+            <div class="row-item">
+              <i class="bi bi-clock"></i>
+              <div>
+                <small>DISPONIBILITÉ</small>
+                <span class="text-white">Stage, alternance, freelance</span>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <!-- TODO : remplace les # par tes vrais profils -->
+              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="brand">
+          <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          félicien<span class="dot-period">.</span>
+        </div>
+        <p>Développeur mobile &amp; web — license en informatique et télécommunications. Je conçois des solutions numériques utiles, pensées pour des problèmes réels.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:danrafelicien@gmail.com">danrafelicien@gmail.com</a></li>
+          <li><a href="tel:+23560077150">+235 60 07 71 50</a></li>
+          <li>Moundou, Tchad</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Réseaux</h5>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="current-year"></span> Félicien — Tous droits réservés</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

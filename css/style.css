@@ -433,10 +433,10 @@ section{padding:5.5rem 0;}
   .cta-band{padding:2.4rem 1.4rem;}
 
   .signal-photo {
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65%;
-    height: 100%;
+    width: 75%;
+    height: 140%;
   }
 }
